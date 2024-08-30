@@ -43,10 +43,10 @@ spec:
         - name: DBPASS
           valueFrom:
             secretKeyRef:
-              name: devops-secret-config 
+              name: devops-api-secret
               key: DBPASS
         - name: DBUSER
           valueFrom:
             secretKeyRef:
-              name: devops-secret-config 
+              name: devops-api-secret
               key: DBUSER
