@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx2
+  labels:
+    team: kaizen
+    app: hello
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2  
+  nodeSelector:
+    team: kaizen
+    
